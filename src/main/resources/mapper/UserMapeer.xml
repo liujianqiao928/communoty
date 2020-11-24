@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.custchina.shequdemo.mapper.UserMapper">
+<insert id="insert" parameterType="com.custchina.shequdemo.model.User">
+    insert into users(name,account_id,token,gmt_create,gmt_modified,avater_url)  values(#{name},#{accountId},#{token},#{gmtCreate},#{gmtModified},#{avaterUrl})
+</insert>
+<update id="update" parameterType="com.custchina.shequdemo.model.User">
+    UPDATE users set token =#{token}  ,name = #{name} , gmt_modified = #{gmtModified} where id -#{id}
+</update>
+</mapper>
