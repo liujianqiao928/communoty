@@ -3,7 +3,7 @@ package com.custchina.shequdemo.Service.ServiceImpl;
 import com.custchina.shequdemo.Service.QuestionService;
 import com.custchina.shequdemo.dto.PageDto;
 import com.custchina.shequdemo.dto.QuestionDto;
-import com.custchina.shequdemo.mapper.QuestionMapper;
+import com.custchina.shequdemo.mapper.QuestionEXMapper;
 import com.custchina.shequdemo.mapper.TouristMapper;
 import com.custchina.shequdemo.mapper.UserMapper;
 import com.custchina.shequdemo.model.Question;
@@ -17,13 +17,12 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 @Service
 public class QuestionServiceImpl implements QuestionService {
     @Autowired
-    private QuestionMapper questionMapper;
+    private QuestionEXMapper questionMapper;
     @Autowired
     private UserMapper userMapper;
     @Autowired

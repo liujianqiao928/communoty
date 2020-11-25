@@ -1,9 +1,4 @@
 package com.custchina.shequdemo.model;
-
-import lombok.Data;
-
-import javax.xml.soap.Text;
-
 public class Question {
     private Long id;
     private String title;

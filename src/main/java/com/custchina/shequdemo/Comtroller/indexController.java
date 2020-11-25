@@ -1,10 +1,9 @@
 package com.custchina.shequdemo.Comtroller;
 
 import com.custchina.shequdemo.Service.QuestionService;
+import com.custchina.shequdemo.cache.HotCache;
 import com.custchina.shequdemo.dto.PageDto;
-import com.custchina.shequdemo.dto.QuestionDto;
 import com.custchina.shequdemo.mapper.UserMapper;
-import com.custchina.shequdemo.model.Question;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -21,6 +20,8 @@ public class indexController {
     private UserMapper userMapper;
 @Autowired
 private QuestionService questionService;
+@Autowired
+private HotCache hotCache;
     @GetMapping("/")
     public String index(HttpServletRequest request, String token,
                         Model model,
@@ -38,8 +39,10 @@ private QuestionService questionService;
 //            }
 //
 //
+        List<String> tags = hotCache.getHots();
         PageDto pageDto =questionService.li(page,size);
         model.addAttribute("pageDto",pageDto);
+        model.addAttribute("tags",tags);
 
 
         return "index";

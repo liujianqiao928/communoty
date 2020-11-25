@@ -6,7 +6,7 @@ import com.custchina.shequdemo.enums.CommentTypeEnum;
 import com.custchina.shequdemo.excaption.CustomizeErrorCode;
 import com.custchina.shequdemo.excaption.CustomizeException;
 import com.custchina.shequdemo.mapper.CommentMapper;
-import com.custchina.shequdemo.mapper.QuestionMapper;
+import com.custchina.shequdemo.mapper.QuestionEXMapper;
 import com.custchina.shequdemo.mapper.TouristMapper;
 import com.custchina.shequdemo.model.*;
 import org.springframework.beans.BeanUtils;
@@ -26,7 +26,7 @@ public class CommentServiceImpl implements CommentService {
     @Autowired
     private CommentMapper commentMapper;
     @Autowired
-    private QuestionMapper questionMapper;
+    private QuestionEXMapper questionMapper;
     @Autowired
     private TouristMapper touristMapper;
     @Override

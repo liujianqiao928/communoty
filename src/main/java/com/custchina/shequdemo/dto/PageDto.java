@@ -1,7 +1,5 @@
 package com.custchina.shequdemo.dto;
 
-import com.custchina.shequdemo.model.Question;
-
 import java.util.ArrayList;
 import java.util.List;
 
