@@ -1,5 +1,4 @@
 package com.custchina.shequdemo.Comtroller;
-
 import com.custchina.shequdemo.Service.QuestionService;
 import com.custchina.shequdemo.cache.tagCache;
 import com.custchina.shequdemo.dto.QuestionDto;
@@ -14,7 +13,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
-
 import javax.servlet.http.HttpServletRequest;
 import java.io.File;
 
@@ -75,7 +73,7 @@ public class publishController {
         }
         String pa = publishController.class.getClassLoader().getResource("static/images").toString();
         String path = pa.substring(pa.lastIndexOf("C") );
-        System.out.println(path);
+
         ;
 
         File f=new File(path);
