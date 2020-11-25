@@ -73,11 +73,15 @@ public class publishController {
             model.addAttribute("error","用户名未登录");
             return "redirect:/";
         }
-        String path = "C:\\Users\\Administrator\\Desktop\\shequ\\shequ\\src\\main\\resources\\static\\images";
+        String pa = publishController.class.getClassLoader().getResource("static/images").toString();
+        String path = pa.substring(pa.lastIndexOf("C") );
+        System.out.println(path);
+        ;
 
         File f=new File(path);
         String originalFilename = multipartFile.getOriginalFilename();
         String a = FileTool.filePath(f,originalFilename);
+        System.out.println(a);
         String s = a.substring(a.lastIndexOf("c") +1);
 
         FileTool.FILEUPLOAD(multipartFile, a);
