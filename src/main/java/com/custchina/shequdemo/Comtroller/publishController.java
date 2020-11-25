@@ -53,22 +53,22 @@ public class publishController {
 
 
         if (title == null || title == "") {
-            model.addAttribute("error","æ ‡é¢˜ä¸ä¸ºç©º");
+            model.addAttribute("error","±êÌâ²»Îª¿Õ");
             return "publish";
         }
         if (description == null || description == "") {
-            model.addAttribute("error","å†…å®¹ä¸èƒ½ä¸ºç©º");
+            model.addAttribute("error","ÄÚÈİ²»ÄÜÎª¿Õ");
             return "publish";
         }
         if (tag == null || tag == "") {
-            model.addAttribute("error","æ ‡åƒä¸èƒ½ä¸ºç©º");
+            model.addAttribute("error","±êÇ§²»ÄÜÎª¿Õ");
             return "publish";
         }
 
 
         Tourist tourists = (Tourist) request.getSession().getAttribute("tourist");
         if (tourists == null){
-            model.addAttribute("error","ç”¨æˆ·åæœªç™»å½•");
+            model.addAttribute("error","ÓÃ»§ÃûÎ´µÇÂ¼");
             return "redirect:/";
         }
         String pa = publishController.class.getClassLoader().getResource("static/images").toString();
