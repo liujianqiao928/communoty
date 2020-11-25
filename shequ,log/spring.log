@@ -3588,3 +3588,240 @@ Caused by: java.lang.IllegalArgumentException: Result Maps collection already co
 2020-11-25 14:06:30.978  INFO 8584 --- [scheduling-1] c.c.shequdemo.schedule.HotTagTask        : the time is STOPWed Nov 25 14:06:30 CST 2020
 2020-11-25 14:06:50.976  INFO 8584 --- [scheduling-1] c.c.shequdemo.schedule.HotTagTask        : the time is STARTWed Nov 25 14:06:50 CST 2020
 2020-11-25 14:06:50.979  INFO 8584 --- [scheduling-1] c.c.shequdemo.schedule.HotTagTask        : the time is STOPWed Nov 25 14:06:50 CST 2020
+2020-11-25 14:09:16.086  INFO 14828 --- [restartedMain] c.c.shequdemo.ShequdemoApplication       : Starting ShequdemoApplication on DESKTOP-33HQIGV with PID 14828 (F:\shequdemo\target\classes started by Beautiful in F:\shequdemo)
+2020-11-25 14:09:16.089  INFO 14828 --- [restartedMain] c.c.shequdemo.ShequdemoApplication       : No active profile set, falling back to default profiles: default
+2020-11-25 14:09:16.138  INFO 14828 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-11-25 14:09:16.138  INFO 14828 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-11-25 14:09:16.145  WARN 14828 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-11-25 14:09:17.126  INFO 14828 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-11-25 14:09:17.135  INFO 14828 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-25 14:09:17.136  INFO 14828 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-25 14:09:17.228  INFO 14828 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-25 14:09:17.228  INFO 14828 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1090 ms
+2020-11-25 14:09:17.733  INFO 14828 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-25 14:09:17.805  INFO 14828 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-11-25 14:09:17.917  INFO 14828 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-11-25 14:09:18.027  INFO 14828 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-11-25 14:09:18.074  INFO 14828 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-11-25 14:09:18.083  INFO 14828 --- [scheduling-1] c.c.shequdemo.schedule.HotTagTask        : the time is STARTWed Nov 25 14:09:18 CST 2020
+2020-11-25 14:09:18.086  INFO 14828 --- [restartedMain] c.c.shequdemo.ShequdemoApplication       : Started ShequdemoApplication in 2.454 seconds (JVM running for 3.298)
+2020-11-25 14:09:18.203  INFO 14828 --- [scheduling-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-11-25 14:09:18.675  INFO 14828 --- [scheduling-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-11-25 14:09:18.724  INFO 14828 --- [scheduling-1] c.c.shequdemo.schedule.HotTagTask        : the time is STOPWed Nov 25 14:09:18 CST 2020
+2020-11-25 14:09:26.414  INFO 14828 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-25 14:09:26.414  INFO 14828 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-25 14:09:26.421  INFO 14828 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2020-11-25 14:09:38.084  INFO 14828 --- [scheduling-1] c.c.shequdemo.schedule.HotTagTask        : the time is STARTWed Nov 25 14:09:38 CST 2020
+2020-11-25 14:09:38.092  INFO 14828 --- [scheduling-1] c.c.shequdemo.schedule.HotTagTask        : the time is STOPWed Nov 25 14:09:38 CST 2020
+2020-11-25 14:09:58.084  INFO 14828 --- [scheduling-1] c.c.shequdemo.schedule.HotTagTask        : the time is STARTWed Nov 25 14:09:58 CST 2020
+2020-11-25 14:09:58.088  INFO 14828 --- [scheduling-1] c.c.shequdemo.schedule.HotTagTask        : the time is STOPWed Nov 25 14:09:58 CST 2020
+2020-11-25 14:10:18.085  INFO 14828 --- [scheduling-1] c.c.shequdemo.schedule.HotTagTask        : the time is STARTWed Nov 25 14:10:18 CST 2020
+2020-11-25 14:10:18.088  INFO 14828 --- [scheduling-1] c.c.shequdemo.schedule.HotTagTask        : the time is STOPWed Nov 25 14:10:18 CST 2020
+2020-11-25 14:10:38.085  INFO 14828 --- [scheduling-1] c.c.shequdemo.schedule.HotTagTask        : the time is STARTWed Nov 25 14:10:38 CST 2020
+2020-11-25 14:10:38.088  INFO 14828 --- [scheduling-1] c.c.shequdemo.schedule.HotTagTask        : the time is STOPWed Nov 25 14:10:38 CST 2020
+2020-11-25 14:10:58.085  INFO 14828 --- [scheduling-1] c.c.shequdemo.schedule.HotTagTask        : the time is STARTWed Nov 25 14:10:58 CST 2020
+2020-11-25 14:10:58.089  INFO 14828 --- [scheduling-1] c.c.shequdemo.schedule.HotTagTask        : the time is STOPWed Nov 25 14:10:58 CST 2020
+2020-11-25 14:11:18.084  INFO 14828 --- [scheduling-1] c.c.shequdemo.schedule.HotTagTask        : the time is STARTWed Nov 25 14:11:18 CST 2020
+2020-11-25 14:11:18.086  INFO 14828 --- [scheduling-1] c.c.shequdemo.schedule.HotTagTask        : the time is STOPWed Nov 25 14:11:18 CST 2020
+2020-11-25 14:11:38.084  INFO 14828 --- [scheduling-1] c.c.shequdemo.schedule.HotTagTask        : the time is STARTWed Nov 25 14:11:38 CST 2020
+2020-11-25 14:11:38.087  INFO 14828 --- [scheduling-1] c.c.shequdemo.schedule.HotTagTask        : the time is STOPWed Nov 25 14:11:38 CST 2020
+2020-11-25 14:11:58.085  INFO 14828 --- [scheduling-1] c.c.shequdemo.schedule.HotTagTask        : the time is STARTWed Nov 25 14:11:58 CST 2020
+2020-11-25 14:11:58.088  INFO 14828 --- [scheduling-1] c.c.shequdemo.schedule.HotTagTask        : the time is STOPWed Nov 25 14:11:58 CST 2020
+2020-11-25 14:12:18.085  INFO 14828 --- [scheduling-1] c.c.shequdemo.schedule.HotTagTask        : the time is STARTWed Nov 25 14:12:18 CST 2020
+2020-11-25 14:12:18.088  INFO 14828 --- [scheduling-1] c.c.shequdemo.schedule.HotTagTask        : the time is STOPWed Nov 25 14:12:18 CST 2020
+2020-11-25 14:12:38.084  INFO 14828 --- [scheduling-1] c.c.shequdemo.schedule.HotTagTask        : the time is STARTWed Nov 25 14:12:38 CST 2020
+2020-11-25 14:12:38.086  INFO 14828 --- [scheduling-1] c.c.shequdemo.schedule.HotTagTask        : the time is STOPWed Nov 25 14:12:38 CST 2020
+2020-11-25 14:12:58.084  INFO 14828 --- [scheduling-1] c.c.shequdemo.schedule.HotTagTask        : the time is STARTWed Nov 25 14:12:58 CST 2020
+2020-11-25 14:12:58.087  INFO 14828 --- [scheduling-1] c.c.shequdemo.schedule.HotTagTask        : the time is STOPWed Nov 25 14:12:58 CST 2020
+2020-11-25 14:13:18.085  INFO 14828 --- [scheduling-1] c.c.shequdemo.schedule.HotTagTask        : the time is STARTWed Nov 25 14:13:18 CST 2020
+2020-11-25 14:13:18.088  INFO 14828 --- [scheduling-1] c.c.shequdemo.schedule.HotTagTask        : the time is STOPWed Nov 25 14:13:18 CST 2020
+2020-11-25 14:13:38.085  INFO 14828 --- [scheduling-1] c.c.shequdemo.schedule.HotTagTask        : the time is STARTWed Nov 25 14:13:38 CST 2020
+2020-11-25 14:13:38.088  INFO 14828 --- [scheduling-1] c.c.shequdemo.schedule.HotTagTask        : the time is STOPWed Nov 25 14:13:38 CST 2020
+2020-11-25 14:13:58.085  INFO 14828 --- [scheduling-1] c.c.shequdemo.schedule.HotTagTask        : the time is STARTWed Nov 25 14:13:58 CST 2020
+2020-11-25 14:13:58.089  INFO 14828 --- [scheduling-1] c.c.shequdemo.schedule.HotTagTask        : the time is STOPWed Nov 25 14:13:58 CST 2020
+2020-11-25 14:14:18.085  INFO 14828 --- [scheduling-1] c.c.shequdemo.schedule.HotTagTask        : the time is STARTWed Nov 25 14:14:18 CST 2020
+2020-11-25 14:14:18.089  INFO 14828 --- [scheduling-1] c.c.shequdemo.schedule.HotTagTask        : the time is STOPWed Nov 25 14:14:18 CST 2020
+2020-11-25 14:14:38.085  INFO 14828 --- [scheduling-1] c.c.shequdemo.schedule.HotTagTask        : the time is STARTWed Nov 25 14:14:38 CST 2020
+2020-11-25 14:14:38.088  INFO 14828 --- [scheduling-1] c.c.shequdemo.schedule.HotTagTask        : the time is STOPWed Nov 25 14:14:38 CST 2020
+2020-11-25 14:14:58.085  INFO 14828 --- [scheduling-1] c.c.shequdemo.schedule.HotTagTask        : the time is STARTWed Nov 25 14:14:58 CST 2020
+2020-11-25 14:14:58.088  INFO 14828 --- [scheduling-1] c.c.shequdemo.schedule.HotTagTask        : the time is STOPWed Nov 25 14:14:58 CST 2020
+2020-11-25 14:15:18.085  INFO 14828 --- [scheduling-1] c.c.shequdemo.schedule.HotTagTask        : the time is STARTWed Nov 25 14:15:18 CST 2020
+2020-11-25 14:15:18.088  INFO 14828 --- [scheduling-1] c.c.shequdemo.schedule.HotTagTask        : the time is STOPWed Nov 25 14:15:18 CST 2020
+2020-11-25 14:15:38.084  INFO 14828 --- [scheduling-1] c.c.shequdemo.schedule.HotTagTask        : the time is STARTWed Nov 25 14:15:38 CST 2020
+2020-11-25 14:15:38.087  INFO 14828 --- [scheduling-1] c.c.shequdemo.schedule.HotTagTask        : the time is STOPWed Nov 25 14:15:38 CST 2020
+2020-11-25 14:15:58.085  INFO 14828 --- [scheduling-1] c.c.shequdemo.schedule.HotTagTask        : the time is STARTWed Nov 25 14:15:58 CST 2020
+2020-11-25 14:15:58.088  INFO 14828 --- [scheduling-1] c.c.shequdemo.schedule.HotTagTask        : the time is STOPWed Nov 25 14:15:58 CST 2020
+2020-11-25 14:16:19.750  INFO 8264 --- [restartedMain] c.c.shequdemo.ShequdemoApplication       : Starting ShequdemoApplication on DESKTOP-33HQIGV with PID 8264 (F:\shequdemo\target\classes started by Beautiful in F:\shequdemo)
+2020-11-25 14:16:19.752  INFO 8264 --- [restartedMain] c.c.shequdemo.ShequdemoApplication       : No active profile set, falling back to default profiles: default
+2020-11-25 14:16:19.801  INFO 8264 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-11-25 14:16:19.801  INFO 8264 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-11-25 14:16:19.815  WARN 8264 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-11-25 14:16:21.155  INFO 8264 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-11-25 14:16:21.163  INFO 8264 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-25 14:16:21.163  INFO 8264 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-25 14:16:21.259  INFO 8264 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-25 14:16:21.260  INFO 8264 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1459 ms
+2020-11-25 14:16:21.867  INFO 8264 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-25 14:16:21.964  INFO 8264 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-11-25 14:16:22.171  INFO 8264 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-11-25 14:16:22.352  INFO 8264 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-11-25 14:16:22.390  INFO 8264 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-11-25 14:16:22.403  INFO 8264 --- [restartedMain] c.c.shequdemo.ShequdemoApplication       : Started ShequdemoApplication in 3.029 seconds (JVM running for 3.967)
+2020-11-25 14:16:22.410  INFO 8264 --- [scheduling-1] c.c.shequdemo.schedule.HotTagTask        : the time is STARTWed Nov 25 14:16:22 CST 2020
+2020-11-25 14:16:22.521  INFO 8264 --- [scheduling-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-11-25 14:16:23.050  INFO 8264 --- [scheduling-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-11-25 14:16:23.108  INFO 8264 --- [scheduling-1] c.c.shequdemo.schedule.HotTagTask        : the time is STOPWed Nov 25 14:16:23 CST 2020
+2020-11-25 14:16:39.530  INFO 8264 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-25 14:16:39.531  INFO 8264 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-25 14:16:39.540  INFO 8264 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2020-11-25 14:16:42.399  INFO 8264 --- [scheduling-1] c.c.shequdemo.schedule.HotTagTask        : the time is STARTWed Nov 25 14:16:42 CST 2020
+2020-11-25 14:16:42.404  INFO 8264 --- [scheduling-1] c.c.shequdemo.schedule.HotTagTask        : the time is STOPWed Nov 25 14:16:42 CST 2020
+2020-11-25 14:17:02.399  INFO 8264 --- [scheduling-1] c.c.shequdemo.schedule.HotTagTask        : the time is STARTWed Nov 25 14:17:02 CST 2020
+2020-11-25 14:17:02.403  INFO 8264 --- [scheduling-1] c.c.shequdemo.schedule.HotTagTask        : the time is STOPWed Nov 25 14:17:02 CST 2020
+2020-11-25 14:17:22.401  INFO 8264 --- [scheduling-1] c.c.shequdemo.schedule.HotTagTask        : the time is STARTWed Nov 25 14:17:22 CST 2020
+2020-11-25 14:17:22.405  INFO 8264 --- [scheduling-1] c.c.shequdemo.schedule.HotTagTask        : the time is STOPWed Nov 25 14:17:22 CST 2020
+2020-11-25 14:17:42.400  INFO 8264 --- [scheduling-1] c.c.shequdemo.schedule.HotTagTask        : the time is STARTWed Nov 25 14:17:42 CST 2020
+2020-11-25 14:17:42.403  INFO 8264 --- [scheduling-1] c.c.shequdemo.schedule.HotTagTask        : the time is STOPWed Nov 25 14:17:42 CST 2020
+2020-11-25 14:18:02.400  INFO 8264 --- [scheduling-1] c.c.shequdemo.schedule.HotTagTask        : the time is STARTWed Nov 25 14:18:02 CST 2020
+2020-11-25 14:18:02.403  INFO 8264 --- [scheduling-1] c.c.shequdemo.schedule.HotTagTask        : the time is STOPWed Nov 25 14:18:02 CST 2020
+2020-11-25 14:18:22.399  INFO 8264 --- [scheduling-1] c.c.shequdemo.schedule.HotTagTask        : the time is STARTWed Nov 25 14:18:22 CST 2020
+2020-11-25 14:18:22.403  INFO 8264 --- [scheduling-1] c.c.shequdemo.schedule.HotTagTask        : the time is STOPWed Nov 25 14:18:22 CST 2020
+2020-11-25 14:58:09.122  INFO 11644 --- [restartedMain] c.c.shequdemo.ShequdemoApplication       : Starting ShequdemoApplication on DESKTOP-33HQIGV with PID 11644 (F:\shequdemo\target\classes started by Beautiful in F:\shequdemo)
+2020-11-25 14:58:09.125  INFO 11644 --- [restartedMain] c.c.shequdemo.ShequdemoApplication       : No active profile set, falling back to default profiles: default
+2020-11-25 14:58:09.173  INFO 11644 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-11-25 14:58:09.174  INFO 11644 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-11-25 14:58:09.230  WARN 11644 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-11-25 14:58:10.292  INFO 11644 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2020-11-25 14:58:10.308  INFO 11644 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-25 14:58:10.308  INFO 11644 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-25 14:58:10.392  INFO 11644 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-25 14:58:10.393  INFO 11644 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1219 ms
+2020-11-25 14:58:10.900  INFO 11644 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-25 14:58:10.967  INFO 11644 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-11-25 14:58:11.068  INFO 11644 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-11-25 14:58:11.174  INFO 11644 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-11-25 14:58:11.198  WARN 11644 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 80 is already in use
+2020-11-25 14:58:11.200  INFO 11644 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2020-11-25 14:58:11.201  INFO 11644 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-25 14:58:11.204  INFO 11644 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-11-25 14:58:11.214  INFO 11644 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-11-25 14:58:11.219 ERROR 11644 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 80 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 80 or configure this application to listen on another port.
+
+2020-11-25 14:58:28.569  INFO 7116 --- [restartedMain] c.c.shequdemo.ShequdemoApplication       : Starting ShequdemoApplication on DESKTOP-33HQIGV with PID 7116 (F:\shequdemo\target\classes started by Beautiful in F:\shequdemo)
+2020-11-25 14:58:28.572  INFO 7116 --- [restartedMain] c.c.shequdemo.ShequdemoApplication       : No active profile set, falling back to default profiles: default
+2020-11-25 14:58:28.629  INFO 7116 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-11-25 14:58:28.629  INFO 7116 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-11-25 14:58:28.635  WARN 7116 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-11-25 14:58:29.857  INFO 7116 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2020-11-25 14:58:29.871  INFO 7116 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-25 14:58:29.872  INFO 7116 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-25 14:58:29.994  INFO 7116 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-25 14:58:29.994  INFO 7116 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1365 ms
+2020-11-25 14:58:30.552  INFO 7116 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-25 14:58:30.630  INFO 7116 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-11-25 14:58:30.753  INFO 7116 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-11-25 14:58:30.845  INFO 7116 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-11-25 14:58:30.871  WARN 7116 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 80 is already in use
+2020-11-25 14:58:30.876  INFO 7116 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2020-11-25 14:58:30.876  INFO 7116 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-25 14:58:30.880  INFO 7116 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-11-25 14:58:30.894  INFO 7116 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-11-25 14:58:30.899 ERROR 7116 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 80 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 80 or configure this application to listen on another port.
+
+2020-11-25 14:58:45.883  INFO 10540 --- [restartedMain] c.c.shequdemo.ShequdemoApplication       : Starting ShequdemoApplication on DESKTOP-33HQIGV with PID 10540 (F:\shequdemo\target\classes started by Beautiful in F:\shequdemo)
+2020-11-25 14:58:45.888  INFO 10540 --- [restartedMain] c.c.shequdemo.ShequdemoApplication       : No active profile set, falling back to default profiles: default
+2020-11-25 14:58:46.027  INFO 10540 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-11-25 14:58:46.027  INFO 10540 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-11-25 14:58:46.044  WARN 10540 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-11-25 14:58:47.154  INFO 10540 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2020-11-25 14:58:47.162  INFO 10540 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-25 14:58:47.163  INFO 10540 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-25 14:58:47.246  INFO 10540 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-25 14:58:47.247  INFO 10540 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1220 ms
+2020-11-25 14:58:47.743  INFO 10540 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-25 14:58:47.817  INFO 10540 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-11-25 14:58:47.923  INFO 10540 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-11-25 14:58:48.016  INFO 10540 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-11-25 14:58:48.050  INFO 10540 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2020-11-25 14:58:48.062  INFO 10540 --- [scheduling-1] c.c.shequdemo.schedule.HotTagTask        : the time is STARTWed Nov 25 14:58:48 CST 2020
+2020-11-25 14:58:48.068  INFO 10540 --- [restartedMain] c.c.shequdemo.ShequdemoApplication       : Started ShequdemoApplication in 2.623 seconds (JVM running for 3.43)
+2020-11-25 14:58:48.177  INFO 10540 --- [scheduling-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-11-25 14:58:48.473  INFO 10540 --- [scheduling-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-11-25 14:58:48.532  INFO 10540 --- [scheduling-1] c.c.shequdemo.schedule.HotTagTask        : the time is STOPWed Nov 25 14:58:48 CST 2020
+2020-11-25 14:59:08.062  INFO 10540 --- [scheduling-1] c.c.shequdemo.schedule.HotTagTask        : the time is STARTWed Nov 25 14:59:08 CST 2020
+2020-11-25 14:59:08.072  INFO 10540 --- [scheduling-1] c.c.shequdemo.schedule.HotTagTask        : the time is STOPWed Nov 25 14:59:08 CST 2020
+2020-11-25 14:59:22.831  INFO 10540 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-25 14:59:22.831  INFO 10540 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-25 14:59:22.836  INFO 10540 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2020-11-25 14:59:28.063  INFO 10540 --- [scheduling-1] c.c.shequdemo.schedule.HotTagTask        : the time is STARTWed Nov 25 14:59:28 CST 2020
+2020-11-25 14:59:28.067  INFO 10540 --- [scheduling-1] c.c.shequdemo.schedule.HotTagTask        : the time is STOPWed Nov 25 14:59:28 CST 2020
+2020-11-25 14:59:48.063  INFO 10540 --- [scheduling-1] c.c.shequdemo.schedule.HotTagTask        : the time is STARTWed Nov 25 14:59:48 CST 2020
+2020-11-25 14:59:48.067  INFO 10540 --- [scheduling-1] c.c.shequdemo.schedule.HotTagTask        : the time is STOPWed Nov 25 14:59:48 CST 2020
+2020-11-25 15:00:08.063  INFO 10540 --- [scheduling-1] c.c.shequdemo.schedule.HotTagTask        : the time is STARTWed Nov 25 15:00:08 CST 2020
+2020-11-25 15:00:08.067  INFO 10540 --- [scheduling-1] c.c.shequdemo.schedule.HotTagTask        : the time is STOPWed Nov 25 15:00:08 CST 2020
+2020-11-25 15:00:28.063  INFO 10540 --- [scheduling-1] c.c.shequdemo.schedule.HotTagTask        : the time is STARTWed Nov 25 15:00:28 CST 2020
+2020-11-25 15:00:28.066  INFO 10540 --- [scheduling-1] c.c.shequdemo.schedule.HotTagTask        : the time is STOPWed Nov 25 15:00:28 CST 2020
+2020-11-25 15:00:31.205  INFO 10540 --- [Thread-11] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2020-11-25 15:00:31.205  INFO 10540 --- [Thread-11] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-25 15:00:31.205  INFO 10540 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-11-25 15:00:31.209  INFO 10540 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-11-25 15:00:31.387  INFO 10540 --- [restartedMain] c.c.shequdemo.ShequdemoApplication       : Starting ShequdemoApplication on DESKTOP-33HQIGV with PID 10540 (F:\shequdemo\target\classes started by Beautiful in F:\shequdemo)
+2020-11-25 15:00:31.387  INFO 10540 --- [restartedMain] c.c.shequdemo.ShequdemoApplication       : No active profile set, falling back to default profiles: default
+2020-11-25 15:00:31.677  INFO 10540 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2020-11-25 15:00:31.678  INFO 10540 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-25 15:00:31.678  INFO 10540 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-25 15:00:31.718  INFO 10540 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-25 15:00:31.718  INFO 10540 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 329 ms
+2020-11-25 15:00:31.883  INFO 10540 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-25 15:00:31.904  INFO 10540 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-11-25 15:00:31.943  INFO 10540 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-11-25 15:00:32.012  INFO 10540 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-11-25 15:00:32.020  WARN 10540 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 80 is already in use
+2020-11-25 15:00:32.021  INFO 10540 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2020-11-25 15:00:32.021  INFO 10540 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-25 15:00:32.022  INFO 10540 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-11-25 15:00:32.027  INFO 10540 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-11-25 15:00:32.032 ERROR 10540 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 80 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 80 or configure this application to listen on another port.
+
