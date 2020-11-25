@@ -1,0 +1,63 @@
+2020-11-25 09:19:46.298  INFO 14168 --- [restartedMain] c.c.shequdemo.ShequdemoApplication       : Starting ShequdemoApplication on DESKTOP-33HQIGV with PID 14168 (F:\shequdemo\target\classes started by Beautiful in F:\shequdemo)
+2020-11-25 09:19:46.299  INFO 14168 --- [restartedMain] c.c.shequdemo.ShequdemoApplication       : No active profile set, falling back to default profiles: default
+2020-11-25 09:19:49.208  INFO 8292 --- [restartedMain] c.c.shequdemo.ShequdemoApplication       : Starting ShequdemoApplication on DESKTOP-33HQIGV with PID 8292 (F:\shequdemo\target\classes started by Beautiful in F:\shequdemo)
+2020-11-25 09:19:49.210  INFO 8292 --- [restartedMain] c.c.shequdemo.ShequdemoApplication       : No active profile set, falling back to default profiles: default
+2020-11-25 09:19:49.253  INFO 8292 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-11-25 09:19:49.253  INFO 8292 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-11-25 09:19:49.258  WARN 8292 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-11-25 09:19:50.603  INFO 8292 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-11-25 09:19:50.611  INFO 8292 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-25 09:19:50.611  INFO 8292 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-25 09:19:50.689  INFO 8292 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-25 09:19:50.690  INFO 8292 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1437 ms
+2020-11-25 09:19:51.149  INFO 8292 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-25 09:19:51.210  INFO 8292 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-11-25 09:19:51.424  INFO 8292 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-11-25 09:19:51.465  INFO 8292 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-11-25 09:19:51.476  INFO 8292 --- [restartedMain] c.c.shequdemo.ShequdemoApplication       : Started ShequdemoApplication in 2.582 seconds (JVM running for 3.358)
+2020-11-25 09:19:58.178  INFO 8292 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-25 09:19:58.178  INFO 8292 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-25 09:19:58.183  INFO 8292 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2020-11-25 09:19:58.219  INFO 8292 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-11-25 09:19:58.578  INFO 8292 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-11-25 09:26:08.009  INFO 6812 --- [restartedMain] c.c.shequdemo.ShequdemoApplication       : Starting ShequdemoApplication on DESKTOP-33HQIGV with PID 6812 (F:\shequdemo\target\classes started by Beautiful in F:\shequdemo)
+2020-11-25 09:26:08.012  INFO 6812 --- [restartedMain] c.c.shequdemo.ShequdemoApplication       : No active profile set, falling back to default profiles: default
+2020-11-25 09:26:08.056  INFO 6812 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-11-25 09:26:08.062  WARN 6812 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-11-25 09:26:08.068  INFO 6812 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-11-25 09:26:08.989  INFO 6812 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-11-25 09:26:08.999  INFO 6812 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-25 09:26:08.999  INFO 6812 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-25 09:26:09.094  INFO 6812 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-25 09:26:09.095  INFO 6812 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1027 ms
+2020-11-25 09:26:09.572  INFO 6812 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-25 09:26:09.637  INFO 6812 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-11-25 09:26:09.816  INFO 6812 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-11-25 09:26:09.846  INFO 6812 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-11-25 09:26:09.857  INFO 6812 --- [restartedMain] c.c.shequdemo.ShequdemoApplication       : Started ShequdemoApplication in 2.256 seconds (JVM running for 3.031)
+2020-11-25 09:26:15.962  INFO 6812 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-25 09:26:15.963  INFO 6812 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-25 09:26:15.968  INFO 6812 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2020-11-25 09:26:16.009  INFO 6812 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-11-25 09:26:16.312  INFO 6812 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-11-25 09:26:16.316 DEBUG 6812 --- [http-nio-8080-exec-1] c.c.s.mapper.QuestionMapper.count        : ==>  Preparing: select count(1) from question 
+2020-11-25 09:26:16.344 DEBUG 6812 --- [http-nio-8080-exec-1] c.c.s.mapper.QuestionMapper.count        : ==> Parameters: 
+2020-11-25 09:26:16.376 DEBUG 6812 --- [http-nio-8080-exec-1] c.c.s.mapper.QuestionMapper.count        : <==      Total: 1
+2020-11-25 09:26:16.381 DEBUG 6812 --- [http-nio-8080-exec-1] c.c.shequdemo.mapper.QuestionMapper.li   : ==>  Preparing: select * from question limit ? ,? 
+2020-11-25 09:26:16.381 DEBUG 6812 --- [http-nio-8080-exec-1] c.c.shequdemo.mapper.QuestionMapper.li   : ==> Parameters: 0(Integer), 5(Integer)
+2020-11-25 09:26:16.389 DEBUG 6812 --- [http-nio-8080-exec-1] c.c.shequdemo.mapper.QuestionMapper.li   : <==      Total: 5
+2020-11-25 09:26:16.394 DEBUG 6812 --- [http-nio-8080-exec-1] c.c.s.mapper.TouristMapper.findById      : ==>  Preparing: select * from tourist where user_id=? 
+2020-11-25 09:26:16.395 DEBUG 6812 --- [http-nio-8080-exec-1] c.c.s.mapper.TouristMapper.findById      : ==> Parameters: 10(Long)
+2020-11-25 09:26:16.397 DEBUG 6812 --- [http-nio-8080-exec-1] c.c.s.mapper.TouristMapper.findById      : <==      Total: 1
+2020-11-25 09:26:16.398 DEBUG 6812 --- [http-nio-8080-exec-1] c.c.s.mapper.TouristMapper.findById      : ==>  Preparing: select * from tourist where user_id=? 
+2020-11-25 09:26:16.398 DEBUG 6812 --- [http-nio-8080-exec-1] c.c.s.mapper.TouristMapper.findById      : ==> Parameters: 10(Long)
+2020-11-25 09:26:16.399 DEBUG 6812 --- [http-nio-8080-exec-1] c.c.s.mapper.TouristMapper.findById      : <==      Total: 1
+2020-11-25 09:26:16.400 DEBUG 6812 --- [http-nio-8080-exec-1] c.c.s.mapper.TouristMapper.findById      : ==>  Preparing: select * from tourist where user_id=? 
+2020-11-25 09:26:16.400 DEBUG 6812 --- [http-nio-8080-exec-1] c.c.s.mapper.TouristMapper.findById      : ==> Parameters: 10(Long)
+2020-11-25 09:26:16.402 DEBUG 6812 --- [http-nio-8080-exec-1] c.c.s.mapper.TouristMapper.findById      : <==      Total: 1
+2020-11-25 09:26:16.403 DEBUG 6812 --- [http-nio-8080-exec-1] c.c.s.mapper.TouristMapper.findById      : ==>  Preparing: select * from tourist where user_id=? 
+2020-11-25 09:26:16.403 DEBUG 6812 --- [http-nio-8080-exec-1] c.c.s.mapper.TouristMapper.findById      : ==> Parameters: 0(Long)
+2020-11-25 09:26:16.404 DEBUG 6812 --- [http-nio-8080-exec-1] c.c.s.mapper.TouristMapper.findById      : <==      Total: 0
+2020-11-25 09:26:16.405 DEBUG 6812 --- [http-nio-8080-exec-1] c.c.s.mapper.TouristMapper.findById      : ==>  Preparing: select * from tourist where user_id=? 
+2020-11-25 09:26:16.406 DEBUG 6812 --- [http-nio-8080-exec-1] c.c.s.mapper.TouristMapper.findById      : ==> Parameters: 0(Long)
+2020-11-25 09:26:16.407 DEBUG 6812 --- [http-nio-8080-exec-1] c.c.s.mapper.TouristMapper.findById      : <==      Total: 0
