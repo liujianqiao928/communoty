@@ -28,13 +28,21 @@
 <body>
 <div th:insert="~{navgation :: copy}"></div>
 <div class="container-fluid main">
-        <div class="row">
+    <audio controls="controls" hidden="true" @ended="audioEnd" loop="true" autoplay="autoplay">
+        <source src="/mp/gbqq.ogg" type="audio/ogg">
+        <source src="/mp/gbqq.mp3" type="audio/mpeg">
+        <source src="/mp/gbqq.wav">
+
+    </audio>
+    <embed src="/mp/gbqq.flac" autostart="true" loop="true" hidden="true"></embed>
+
+    <div class="row">
             <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12" >
                 <span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span>
                         <h2>发起</h2>
                 <hr>
 
-                <form action="/publish" method="post" enctype="multipart/form-data" accept-charset="utf-8">
+                <form action="/publish" method="post"  accept-charset="utf-8">
                     <input class="hidden" name="id" th:value="${id}"  />
                     <div class="form-group">
                         <label for="title">问题标题</label>
@@ -90,10 +98,7 @@
 
                         </div>
                     </div>
-                    <div class="form-group">
-                        <label for="file">请上传图片</label>
-                        <input type="file" id="file" name="file">
-                    </div>
+
                     <div class="container-fluid main">
                         <div class="row">
                             <div class="alert alert-danger col-lg-9 col-md-12 col-sm-12 col-xs-12" th:text="${error}" th:if="${error != null}"></div>

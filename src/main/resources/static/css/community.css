@@ -92,6 +92,12 @@ body {
     margin-top: 10px;
     padding-top: 10px;
 }
+.res{
+    margin-left: 49px;
+}
+.login-git{
+    margin-right: 344px;
+}
 
 .publish-tag-tab .label-info {
     white-space: normal;

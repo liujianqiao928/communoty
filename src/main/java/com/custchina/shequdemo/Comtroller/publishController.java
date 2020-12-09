@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 import java.io.File;
 
 @Controller
@@ -44,8 +45,7 @@ public class publishController {
     public String dopublish(@RequestParam("title")String title, @RequestParam("description")String description,
                             @RequestParam("tag")String tag
             , @RequestParam("id")Long id,
-                            HttpServletRequest request, Model model,
-                            @RequestParam(value = "file",required = false)MultipartFile multipartFile){
+                            HttpServletRequest request, Model model , HttpSession session){
         model.addAttribute("title",title);
         model.addAttribute("description",description);
         model.addAttribute("tag",tag);
@@ -71,18 +71,6 @@ public class publishController {
             model.addAttribute("error","用户名未登录");
             return "redirect:/";
         }
-        String pa = publishController.class.getClassLoader().getResource("static/images").toString();
-        String path = pa.substring(pa.lastIndexOf("C") );
-
-        ;
-
-        File f=new File(path);
-        String originalFilename = multipartFile.getOriginalFilename();
-        String a = FileTool.filePath(f,originalFilename);
-        System.out.println(a);
-        String s = a.substring(a.lastIndexOf("c") +1);
-
-        FileTool.FILEUPLOAD(multipartFile, a);
 
         Question question = new Question();
         question.setTitle(title);
@@ -90,10 +78,10 @@ public class publishController {
         question.setTag(tag);
         question.setCreator(tourists.getUser_id());
         question.setId(id);
+        Tourist tourist = (Tourist) session.getAttribute("tourist");
 
-
-
-        question.setImgs(s);
+//        System.out.println(tourist.getUser_photo());
+        question.setImgs(tourist.getUser_photo());
         questionService.createOrupdate(question);
 
         return "redirect:/";

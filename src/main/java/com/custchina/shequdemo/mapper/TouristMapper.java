@@ -15,4 +15,6 @@ public interface TouristMapper{
     Tourist find(@Param("usercode") String usercode,@Param("password") String password);
 
     List<Tourist> selectByExample();
+
+    int insert(Tourist tourist);
 }

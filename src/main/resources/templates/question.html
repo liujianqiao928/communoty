@@ -22,6 +22,15 @@
 <div th:insert="~{navgation :: copy}"></div>
 
 <div class="container-fluid main profile">
+    <audio controls="controls" hidden="true" @ended="audioEnd" loop="true" autoplay="autoplay">
+        <source src="/mp/gbqq.ogg" type="audio/ogg">
+        <source src="/mp/gbqq.mp3" type="audio/mpeg">
+        <source src="/mp/gbqq.wav">
+    </audio>
+    <embed src="/mp/gbqq.flac" autostart="true" loop="true" hidden="true"></embed>
+
+
+
     <div class="row">
         <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12" >
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -60,7 +69,7 @@
                 <div class="media" >
                     <div class="media-left" >
                         <a href="#">
-                            <img class="media-object img-rounded" src="/images/bg.jpg" >
+                            <img class="media-object" th:src="${comment.photo}" >
                         </a>
                     </div>
                     <div class="media-body">
@@ -79,7 +88,7 @@
                             <div class="media" >
                                     <div class="media-left" >
                                         <a href="#">
-                                            <img class="media-object img-rounded" src="/images/bg.jpg" >
+                                            <img class="media-object"th:src="${comment.photo}" >
                                         </a>
                                     </div>
                                     <div class="media-body">
@@ -107,16 +116,16 @@
                 提交回复
             </h4>
             <hr class="col-lg-12 col-md-12 col-sm-12 col-xs-12 comment-sp">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="comment_section">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="comment_section" th:if="${session.user != null || session.tourist != null}">
                 <div class="media" >
                     <div class="media-left" >
                         <a href="#">
-                            <img class="media-object img-rounded" th:src="${question.imgs}" >
+                            <img class="media-object img-rounded" th:src="${session.tourist.getUser_photo()}">
                         </a>
                     </div>
                     <div class="media-body">
                         <h5 class="media-heading" >
-                            <span th:text="xiaoqiao"></span>
+                            <span th:text="${session.tourist.getUser_name()}"></span>
                         </h5>
 
                     </div>
@@ -129,7 +138,7 @@
         <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12" >
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
                 <h3>发起人</h3>
-                <div class="media" >
+                <div class="media"  >
                     <div class="media-left" >
                         <a href="#">
                             <img class="media-object img-rounded" th:src="${question.imgs}" >

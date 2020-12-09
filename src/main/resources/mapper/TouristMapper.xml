@@ -87,9 +87,9 @@
     insert into tourist (user_id, user_code, user_name, 
       user_email, user_password, user_state, 
       user_photo)
-    values (#{userId,jdbcType=BIGINT}, #{userCode,jdbcType=VARCHAR}, #{userName,jdbcType=VARCHAR}, 
-      #{userEmail,jdbcType=VARCHAR}, #{userPassword,jdbcType=VARCHAR}, #{userState,jdbcType=INTEGER}, 
-      #{userPhoto,jdbcType=VARCHAR})
+    values (#{user_id,jdbcType=BIGINT}, #{user_code,jdbcType=VARCHAR}, #{user_name,jdbcType=VARCHAR},
+      #{user_email,jdbcType=VARCHAR}, #{user_password,jdbcType=VARCHAR}, #{user_state,jdbcType=INTEGER},
+      #{user_photo,jdbcType=VARCHAR})
   </insert>
   <insert id="insertSelective" parameterType="com.custchina.shequdemo.model.Tourist">
     insert into tourist

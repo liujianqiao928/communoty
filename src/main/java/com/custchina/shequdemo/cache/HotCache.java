@@ -46,7 +46,7 @@ public class HotCache {
             poll=priorityQueue.poll();
         }
         hots=list;
-        System.out.println(hots);
+//        System.out.println(hots);
 
     }
 }

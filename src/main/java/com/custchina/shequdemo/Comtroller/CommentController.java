@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
 @Controller
 public class CommentController {
@@ -24,7 +25,7 @@ public class CommentController {
     private CommentService commentService;
     @ResponseBody
     @RequestMapping(value = "/comment",method = RequestMethod.POST)
-    public Object post(@RequestBody CommentCreateDto commentDto, HttpServletRequest request){
+    public Object post(@RequestBody CommentCreateDto commentDto, HttpServletRequest request, HttpSession session){
         Tourist tourist = (Tourist) request.getSession().getAttribute("tourist");
 
         User user=(User)request.getSession().getAttribute("user");
@@ -44,6 +45,9 @@ public class CommentController {
         comment.setGmtModified(System.currentTimeMillis());
         comment.setGmtCreate(System.currentTimeMillis());
         comment.setCommentator(tourist.getUser_id());
+        Tourist t = (Tourist) session.getAttribute("tourist");
+
+        comment.setPhoto(t.getUser_photo());
         commentService.insert(comment);
 
 

@@ -24,7 +24,7 @@ public class HotTagTask {
     public void reportCurrentTime(){
         int offset =0;
         int limit = 20;
-        log.info("the time is START{}",new Date());
+//        log.info("the time is START{}",new Date());
         List<Question> list=new ArrayList<>();
         Map<String, Integer> map = new HashMap<>();
         while (offset==0|| list.size()==limit ){
@@ -49,6 +49,6 @@ public class HotTagTask {
         }
 
         hotCache.updateTags(map);
-        log.info("the time is STOP{}",new Date());
+//        log.info("the time is STOP{}",new Date());
     }
 }

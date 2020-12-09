@@ -14,4 +14,9 @@ public class TouristServiceImpl implements TouristService {
     public Tourist find(String code, String password) {
         return touristMapper.find(code,password);
     }
+
+    @Override
+    public int insert(Tourist tourist) {
+        return touristMapper.insert(tourist);
+    }
 }

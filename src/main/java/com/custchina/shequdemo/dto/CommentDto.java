@@ -13,8 +13,17 @@ public class CommentDto {
     private Long likeCount;
     private Integer commentCount;
     private String content;
+    private String photo;
     private User user;
     private Tourist tourist;
+
+    public String getPhoto() {
+        return photo;
+    }
+
+    public void setPhoto(String photo) {
+        this.photo = photo;
+    }
 
     public Long getId() {
         return id;

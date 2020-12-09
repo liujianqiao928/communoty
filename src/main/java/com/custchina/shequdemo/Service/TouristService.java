@@ -6,4 +6,6 @@ import org.springframework.stereotype.Service;
 @Service
 public interface TouristService {
     public Tourist find(String code, String password);
+
+    int insert(Tourist tourist);
 }
