@@ -17,7 +17,11 @@ public enum CustomizeErrorCode implements ICustomizeErrorCode {
     FILE_UPLOAD_FAIL(2010, "图片上传失败"),
     INVALID_INPUT(2011, "非法输入"),
     INVALID_OPERATION(2012, "兄弟，是不是走错房间了？"),
-    ;
+    REDIECT_OFF(2013,"账号已存在，请重新注册" ),
+    LOGIN_ONE(2015,"您还未登录 ，请重新登陆" ),
+    LOGIN_TWO(2016,"密码错误，请重新登陆" ),
+    GN_OFF(2021,"此功能尚未开放,敬请期待" ),
+    LOGIN_OFF(2014,"账号密码错误，请重新登陆" );
 
     @Override
     public String getMessage() {

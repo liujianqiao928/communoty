@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登陆</title>
+
+    <script src="/js/jquery-3.4.1.min.js"></script>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+
+    <!--&lt;!&ndash; 可选的 Bootstrap 主题文件（一般不用引入） &ndash;&gt;-->
+    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">-->
+
+
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/5.13.0/css/all.css">
+    <link rel="stylesheet" href="/css/login.css">
+
+</head>
+
+<body>
+<!--<div th:insert="~{navgation :: copy}"></div>-->
+<div id="login_box">
+    <h2>登陆 </h2>
+    <div id="form">
+        <form action="tourist" method="post">
+            <div class="alert alert-danger  " th:text="${error}" th:if="${error != null}"></div>
+        <div id="input_box">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <input class="in" type="text"  name="usercode"  placeholder="用户名">
+        </div>
+        <div id="input_box">
+            <i class="fa fa-key" aria-hidden="true"></i>
+            <input class="in" type="password" name="password"  placeholder="密码">
+        </div>
+    </div>
+
+    <button type="submit">Sign in</button><br>
+    </form>
+    <div id="Sign">
+        <a class="back  " href="/">返回主页</aclass>
+        <button><a href="https://github.com/login/oauth/authorize?client_id=0aefec3ea8727d629101&redirect_uri=http://49.232.210.242/callback&scope=user&state=1">GitHUB</a></button>
+        <a href="/tores">没有账号?</a>
+    </div>
+</div>
+</body>
+<script></script>
+</html>

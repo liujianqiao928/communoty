@@ -1,5 +1,6 @@
 package com.custchina.shequdemo.mapper;
 
+import com.custchina.shequdemo.model.Tourist;
 import com.custchina.shequdemo.model.User;
 import org.apache.ibatis.annotations.*;
 
@@ -9,8 +10,8 @@ public interface UserMapper {
       void insert(User user);
         @Select("select * from users where token =#{token}")
          User fingByToken(@Param("token") String token);
-        @Select("select * from users where id=#{id}")
-        User findById(@Param("id")long id);
+        @Select("select * from tourist where user_id=#{id}")
+        Tourist findById(@Param("id")long id);
     @Select("select * from users where account_id=#{accountId}")
     User findByAccountId(@Param("accountId")String accountId);
 

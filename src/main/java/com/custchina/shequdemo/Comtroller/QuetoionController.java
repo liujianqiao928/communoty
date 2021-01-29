@@ -1,5 +1,6 @@
 package com.custchina.shequdemo.Comtroller;
 
+import com.alibaba.fastjson.JSON;
 import com.custchina.shequdemo.Service.CommentService;
 import com.custchina.shequdemo.Service.QuestionService;
 import com.custchina.shequdemo.dto.CommentCreateDto;
@@ -24,6 +25,7 @@ public class QuetoionController {
     public String question(@PathVariable(name = "id")Long id, Model model){
        QuestionDto questionDto= questionService.getById(id);
        List<QuestionDto> relatedQuestions =questionService.selectex(questionDto);
+        System.out.println(JSON.toJSON(questionDto));
        List<CommentDto> comments = commentService.listByQuestionId(id);
        questionService.incView(id);
        model.addAttribute("question",questionDto);

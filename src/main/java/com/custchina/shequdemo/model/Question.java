@@ -11,6 +11,15 @@ public class Question {
     private int likeCount;
     private String tag;
     private String imgs;
+    private String namess;
+
+    public String getNamess() {
+        return namess;
+    }
+
+    public void setNamess(String namess) {
+        this.namess = namess;
+    }
 
     public String getImgs() {
         return imgs;

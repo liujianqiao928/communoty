@@ -73,10 +73,10 @@ public class QuestionServiceImpl implements QuestionService {
         List<Question> li = questionMapper.findTitle(title,offset,size);
         List<QuestionDto> liss = new ArrayList<>();
         for (Question question : li) {
-            User user= userMapper.findById(question.getCreator());
+            Tourist tourist= touristMapper.findById(question.getCreator());
             QuestionDto questionDto = new QuestionDto();
             BeanUtils.copyProperties(question,questionDto);
-            questionDto.setUser(user);
+            questionDto.setTourist(tourist);
             liss.add(questionDto);
         }
         pageDto.setQuestions(liss);
@@ -100,10 +100,10 @@ public class QuestionServiceImpl implements QuestionService {
         List<Question> li = questionMapper.list(id,offset,size);
         List<QuestionDto> liss = new ArrayList<>();
         for (Question question : li) {
-            User user= userMapper.findById(question.getCreator());
+            Tourist tourist= touristMapper.findById(question.getCreator());
             QuestionDto questionDto = new QuestionDto();
             BeanUtils.copyProperties(question,questionDto);
-            questionDto.setUser(user);
+            questionDto.setTourist(tourist);
             liss.add(questionDto);
         }
         pageDto.setQuestions(liss);
@@ -121,9 +121,14 @@ public class QuestionServiceImpl implements QuestionService {
 //       }
         QuestionDto questionDto = new QuestionDto();
         BeanUtils.copyProperties(question,questionDto);
-        User user= userMapper.findById(question.getCreator());
-        questionDto.setUser(user);
+        Tourist tourist= userMapper.findById(question.getCreator());
+        questionDto.setTourist(tourist);
         return questionDto;
+    }
+
+    @Override
+    public Integer coungUser(Long id) {
+        return questionMapper.countByUserId(id);
     }
 
     @Override

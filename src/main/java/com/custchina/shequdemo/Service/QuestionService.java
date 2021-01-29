@@ -15,7 +15,7 @@ public interface QuestionService {
         PageDto list(Long id, Integer page, Integer size);
 
         QuestionDto getById(Long id);
-
+Integer coungUser(Long id);
     void createOrupdate(Question question);
 
     void incView(Long id);

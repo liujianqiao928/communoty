@@ -2,7 +2,9 @@ package com.custchina.shequdemo.dto;
 
 import com.custchina.shequdemo.model.Tourist;
 import com.custchina.shequdemo.model.User;
+import lombok.Data;
 
+@Data
 public class CommentDto {
     private Long id;
     private Long parentId;

@@ -78,10 +78,7 @@ public class publishController {
         question.setTag(tag);
         question.setCreator(tourists.getUser_id());
         question.setId(id);
-        Tourist tourist = (Tourist) session.getAttribute("tourist");
 
-//        System.out.println(tourist.getUser_photo());
-        question.setImgs(tourist.getUser_photo());
         questionService.createOrupdate(question);
 
         return "redirect:/";

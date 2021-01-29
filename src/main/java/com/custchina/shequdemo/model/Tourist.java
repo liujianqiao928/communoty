@@ -8,7 +8,7 @@ public class Tourist implements Serializable {
     private String user_code;     //用户账号
     private String user_name;     //用户名称
     private String user_email;
-
+    private String exp;
     public String getUser_email() {
         return user_email;
     }
@@ -18,6 +18,15 @@ public class Tourist implements Serializable {
     }
 
     private String user_password; //用户密码
+
+    public String getExp() {
+        return exp;
+    }
+
+    public void setExp(String exp) {
+        this.exp = exp;
+    }
+
     private Integer user_state;   //用户状态
     private String user_photo;
 

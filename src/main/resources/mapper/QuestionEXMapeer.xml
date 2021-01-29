@@ -2,9 +2,8 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.custchina.shequdemo.mapper.QuestionEXMapper">
     <resultMap id="BaseResultMap" type="com.custchina.shequdemo.model.Question">
-        <id column="id" jdbcType="BIGINT" property="id" />
+        <result column="id" jdbcType="BIGINT" property="id" />
         <result column="title" jdbcType="VARCHAR" property="title" />
-        <result column="description" jdbcType="VARCHAR" property="description" />
         <result column="gmt_create" jdbcType="BIGINT" property="gmtCreate" />
         <result column="gmt_modified" jdbcType="BIGINT" property="gmtModified" />
         <result column="creator" jdbcType="BIGINT" property="creator" />
@@ -13,6 +12,7 @@
         <result column="like_count" jdbcType="INTEGER" property="likeCount" />
         <result column="tag" jdbcType="VARCHAR" property="tag" />
         <result column="imgs" jdbcType="VARCHAR" property="imgs" />
+        <result column="namess" jdbcType="VARCHAR" property="namess" />
     </resultMap>
 
     <!--<select id="findTitle" resultMap="BaseResultMap" parameterType="string">-->
@@ -25,7 +25,7 @@
           This element was generated on Thu Sep 05 06:46:42 CST 2019.
         -->
         ID, TITLE, GMT_CREATE, GMT_MODIFIED, CREATOR, COMMENT_COUNT, VIEW_COUNT, LIKE_COUNT,
-        TAG,IMGS
+        TAG,IMGS,NAMESS
     </sql>
     <sql id="Blob_Column_List">
         <!--
@@ -36,8 +36,8 @@
         DESCRIPTION
     </sql>
     <update id="add" parameterType="com.custchina.shequdemo.model.Question">
-    insert into question(title,description,gmt_create,gmt_modified,creator,tag,imgs )
-     VALUES (#{title},#{description},#{gmtCreate},#{gmtModified},#{creator},#{tag},#{imgs})
+    insert into question(title,description,gmt_create,gmt_modified,creator,tag,imgs,namess)
+     VALUES (#{title},#{description},#{gmtCreate},#{gmtModified},#{creator},#{tag},#{imgs},#{namess})
 </update>
     <!--<select id="li" resultMap="BaseResultMap">-->
     <!--SELECT * FROM  question-->
@@ -80,4 +80,13 @@
     <select id="selectex" parameterType="com.custchina.shequdemo.model.Question" resultMap="BaseResultMap">
         SELECT * FROM question where id != #{id} and tag regexp #{tag}
     </select>
+
+
+    <select id="li" parameterType="com.custchina.shequdemo.model.Question" resultMap="BaseResultMap">
+        select * from question  order by id desc limit #{offset} ,#{size}
+    </select>
+<select id="list" parameterType="com.custchina.shequdemo.model.Question" resultMap="BaseResultMap">
+       select * from question where creator = #{id} limit #{offset} ,#{size}
+    </select>
+
 </mapper>

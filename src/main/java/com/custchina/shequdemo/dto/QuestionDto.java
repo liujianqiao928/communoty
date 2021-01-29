@@ -3,7 +3,9 @@ package com.custchina.shequdemo.dto;
 import com.custchina.shequdemo.model.Question;
 import com.custchina.shequdemo.model.Tourist;
 import com.custchina.shequdemo.model.User;
+import lombok.Data;
 
+@Data
 public class QuestionDto {
     private Long id;
     private String title;
@@ -18,6 +20,66 @@ public class QuestionDto {
     private String imgs;
     private User user;
     private Tourist tourist;
+    private String namess;
+   private Integer countUser;
+
+    public Integer getCountUser() {
+        return countUser;
+    }
+
+    public void setCountUser(Integer countUser) {
+        this.countUser = countUser;
+    }
+
+    public QuestionDto() {
+    }
+
+    @Override
+    public String toString() {
+        return "QuestionDto{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", description='" + description + '\'' +
+                ", gmtCreate=" + gmtCreate +
+                ", gmtModified=" + gmtModified +
+                ", creator=" + creator +
+                ", commentCount=" + commentCount +
+                ", viewCount=" + viewCount +
+                ", likeCount=" + likeCount +
+                ", tag='" + tag + '\'' +
+                ", imgs='" + imgs + '\'' +
+                ", user=" + user +
+                ", tourist=" + tourist +
+                ", namess='" + namess + '\'' +
+                ", question=" + question +
+                '}';
+    }
+
+    public QuestionDto(Long id, String title, String description, Long gmtCreate, Long gmtModified, Long creator, int commentCount, int viewCount, int likeCount, String tag, String imgs, User user, Tourist tourist, String namess, Question question) {
+        this.id = id;
+        this.title = title;
+        this.description = description;
+        this.gmtCreate = gmtCreate;
+        this.gmtModified = gmtModified;
+        this.creator = creator;
+        this.commentCount = commentCount;
+        this.viewCount = viewCount;
+        this.likeCount = likeCount;
+        this.tag = tag;
+        this.imgs = imgs;
+        this.user = user;
+        this.tourist = tourist;
+        this.namess = namess;
+        this.question = question;
+    }
+
+    public String getNamess() {
+        return namess;
+    }
+
+    public void setNamess(String namess) {
+        this.namess = namess;
+    }
 
     public Tourist getTourist() {
         return tourist;

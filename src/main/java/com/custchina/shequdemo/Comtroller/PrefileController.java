@@ -3,6 +3,12 @@ package com.custchina.shequdemo.Comtroller;
 import com.custchina.shequdemo.Service.QuestionService;
 import com.custchina.shequdemo.dto.PageDto;
 
+import com.custchina.shequdemo.dto.QuestionDto;
+import com.custchina.shequdemo.excaption.CustomizeErrorCode;
+import com.custchina.shequdemo.excaption.CustomizeException;
+import com.custchina.shequdemo.mapper.QuestionEXMapper;
+import com.custchina.shequdemo.model.Question;
+import com.custchina.shequdemo.model.Tourist;
 import com.custchina.shequdemo.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -20,7 +26,7 @@ public class PrefileController {
     private QuestionService questionService;
     @GetMapping("/pre/{action}")
     public String prfike(HttpServletRequest request, @PathVariable(name = "action")String action, Model model, @RequestParam(value = "page",defaultValue = "1")Integer page,
-                         @RequestParam(value = "size",defaultValue = "5")Integer size){
+                         @RequestParam(value = "size",defaultValue = "10")Integer size){
         if ("questions".equals(action)){
             model.addAttribute("section","questions");
             model.addAttribute("sectionName","我的提问");
@@ -32,10 +38,20 @@ public class PrefileController {
 //        if (user == null){
 //            return "redirect:/";
 //        }
-        User user = new User();
-        PageDto pageDto = questionService.list(user.getId(), page, size);
-        model.addAttribute("pageDto",pageDto);
+        QuestionDto questionDto = new QuestionDto();
+       Tourist tourist = (Tourist)request.getSession().getAttribute("tourist");
+        if (tourist!=null) {
+            Integer a=questionService.coungUser(tourist.getUser_id());
+            ;
+            PageDto pageDto = questionService.list(tourist.getUser_id(), page, size);
 
-        return "prefile";
+            System.out.println(a);
+            model.addAttribute("pageDto", pageDto);
+            model.addAttribute("count",a);
+            return "prefile";
+        }else {
+            throw new CustomizeException(CustomizeErrorCode.LOGIN_ONE);
+        }
+
     }
 }

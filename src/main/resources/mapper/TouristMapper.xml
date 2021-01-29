@@ -9,6 +9,8 @@
     <result column="user_password" jdbcType="VARCHAR" property="user_password" />
     <result column="user_state" jdbcType="INTEGER" property="user_state" />
     <result column="user_photo" jdbcType="VARCHAR" property="user_photo" />
+    <result column="exp" jdbcType="VARCHAR" property="exp" />
+
   </resultMap>
   <sql id="Example_Where_Clause">
     <where>
@@ -73,7 +75,7 @@
   </sql>
   <select id="selectByExample" parameterType="com.custchina.shequdemo.model.TouristExample" resultMap="BaseResultMap">
     select
-        <include refid="Base_Column_List" />
+    <include refid="Base_Column_List" />
     from tourist
 
   </select>
@@ -86,57 +88,53 @@
   <insert id="insert" parameterType="com.custchina.shequdemo.model.Tourist">
     insert into tourist (user_id, user_code, user_name, 
       user_email, user_password, user_state, 
-      user_photo)
+      user_photo,exp)
     values (#{user_id,jdbcType=BIGINT}, #{user_code,jdbcType=VARCHAR}, #{user_name,jdbcType=VARCHAR},
       #{user_email,jdbcType=VARCHAR}, #{user_password,jdbcType=VARCHAR}, #{user_state,jdbcType=INTEGER},
-      #{user_photo,jdbcType=VARCHAR})
+      #{user_photo,jdbcType=VARCHAR},#{exp,jdbcType=VARCHAR})
   </insert>
   <insert id="insertSelective" parameterType="com.custchina.shequdemo.model.Tourist">
     insert into tourist
     <trim prefix="(" suffix=")" suffixOverrides=",">
-      <if test="userId != null">
-        user_id,
-      </if>
-      <if test="userCode != null">
+
+      <if test="user_code != null">
         user_code,
       </if>
-      <if test="userName != null">
+      <if test="user_name != null">
         user_name,
       </if>
-      <if test="userEmail != null">
+      <if test="user_email != null">
         user_email,
       </if>
-      <if test="userPassword != null">
+      <if test="user_password != null">
         user_password,
       </if>
-      <if test="userState != null">
+      <if test="user_state != null">
         user_state,
       </if>
-      <if test="userPhoto != null">
+      <if test="user_photo != null">
         user_photo,
       </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
-      <if test="userId != null">
-        #{userId,jdbcType=BIGINT},
+
+      <if test="user_code != null">
+        #{user_code,jdbcType=VARCHAR},
       </if>
-      <if test="userCode != null">
-        #{userCode,jdbcType=VARCHAR},
+      <if test="user_name != null">
+        #{user_name,jdbcType=VARCHAR},
       </if>
-      <if test="userName != null">
-        #{userName,jdbcType=VARCHAR},
+      <if test="user_email != null">
+        #{user_email,jdbcType=VARCHAR},
       </if>
-      <if test="userEmail != null">
-        #{userEmail,jdbcType=VARCHAR},
+      <if test="user_password != null">
+        #{user_password,jdbcType=VARCHAR},
       </if>
-      <if test="userPassword != null">
-        #{userPassword,jdbcType=VARCHAR},
+      <if test="user_state != null">
+        #{user_state,jdbcType=INTEGER},
       </if>
-      <if test="userState != null">
-        #{userState,jdbcType=INTEGER},
-      </if>
-      <if test="userPhoto != null">
-        #{userPhoto,jdbcType=VARCHAR},
+      <if test="user_photo != null">
+        #{user_photo,jdbcType=VARCHAR},
       </if>
     </trim>
   </insert>
@@ -178,12 +176,12 @@
   <update id="updateByExample" parameterType="map">
     update tourist
     set user_id = #{record.userId,jdbcType=BIGINT},
-      user_code = #{record.userCode,jdbcType=VARCHAR},
-      user_name = #{record.userName,jdbcType=VARCHAR},
-      user_email = #{record.userEmail,jdbcType=VARCHAR},
-      user_password = #{record.userPassword,jdbcType=VARCHAR},
-      user_state = #{record.userState,jdbcType=INTEGER},
-      user_photo = #{record.userPhoto,jdbcType=VARCHAR}
+    user_code = #{record.userCode,jdbcType=VARCHAR},
+    user_name = #{record.userName,jdbcType=VARCHAR},
+    user_email = #{record.userEmail,jdbcType=VARCHAR},
+    user_password = #{record.userPassword,jdbcType=VARCHAR},
+    user_state = #{record.userState,jdbcType=INTEGER},
+    user_photo = #{record.userPhoto,jdbcType=VARCHAR}
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>
@@ -194,6 +192,6 @@
     from tourist
     where user_code = #{usercode}
     and user_password =#{password}
---     and user_state = '1'
+
   </select>
 </mapper>

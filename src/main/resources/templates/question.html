@@ -15,19 +15,25 @@
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-
+    <link rel="stylesheet" href="/css/editormd.min.css">
+    <link rel="stylesheet" href="/css/editormd.preview.min.css">
+    <script src="/js/editormd.min.js" type="application/javascript"></script>
+    <script src="/js/moment.js" type="application/javascript"></script>
+    <script src="/js/lib/marked.min.js"></script>
+    <script src="/js/lib/prettify.min.js"></script>
 
 </head>
 <body>
+
 <div th:insert="~{navgation :: copy}"></div>
 
-<div class="container-fluid main profile">
-    <audio controls="controls" hidden="true" @ended="audioEnd" loop="true" autoplay="autoplay">
-        <source src="/mp/gbqq.ogg" type="audio/ogg">
-        <source src="/mp/gbqq.mp3" type="audio/mpeg">
-        <source src="/mp/gbqq.wav">
-    </audio>
-    <embed src="/mp/gbqq.flac" autostart="true" loop="true" hidden="true"></embed>
+<div class="container-fluid qumain profile">
+    <!--<audio controls="controls" hidden="true" @ended="audioEnd" loop="true" autoplay="autoplay">-->
+        <!--<source src="/mp/gbqq.ogg" type="audio/ogg">-->
+        <!--<source src="/mp/gbqq.mp3" type="audio/mpeg">-->
+        <!--<source src="/mp/gbqq.wav">-->
+    <!--</audio>-->
+    <!--<embed src="/mp/gbqq.flac" autostart="true" loop="true" hidden="true"></embed>-->
 
 
 
@@ -38,13 +44,18 @@
                     <span th:text="${question.title}"></span>
                 </h2>
                 <span class="text-desc">
-                作者：<span th:text="xiaoqiao"></span> |
-                发布时间：<span th:text="${#dates.format(question.gmtCreate,'yyyy-MM-dd HH:mm')}"></span> |
-                阅读数： <span th:text="${question.viewCount}"></span>
-            </span>
+                    作者：<span th:text="${question.tourist.user_name}"></span>
+
                 <hr class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" th:text="${question.description}"></div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="question-view">
+                    <textarea style="display:none;" th:text="${question.description}"></textarea>
+                </div>
+                <script type="text/javascript">
+                    $(function () {
+                        editormd.markdownToHTML("question-view", {});
+                    });
+                </script>
 
                 <hr class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -61,8 +72,9 @@
                     </a>
                 </div>
             </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <h4>
-                <span th:text="${question.commentCount}"></span>个回复
+                <span th:text="${question.commentCount}"></span> 个回复
             </h4>
             <hr class="col-lg-12 col-md-12 col-sm-12 col-xs-12 comment-sp">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 comments" th:each="comment:${comments}">
@@ -76,11 +88,15 @@
                         <h5 class="media-heading" >
                             <span th:text="${comment.tourist.user_name}"></span>
                         </h5>
-                            <div th:text="${comment.content}"></div>
+                            <div >
+                                <span th:text="${comment.content}"></span>
+                                    <span class="pull-right"
+                                          th:text="${#dates.format(comment.gmtCreate,'yyyy-MM-dd')}"></span>
+                            </div>
                             <div class="menu">
                                 <span class="glyphicon glyphicon-thumbs-up icon"></span>
                                 <span class="glyphicon glyphicon-comment icon" th:data-id="${comment.id}" onclick="collapseComments(this)"></span>
-                                <span class="pull-right" th:text="${#dates.format(question.gmtCreate,'yyyy-MM-dd')}"></span>
+
                             </div>
 
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 collapse sub-comments" th:id="${'comment-'+comment.id}">
@@ -110,6 +126,7 @@
 
                     </div>
                 </div>
+            </div>
             </div>
             <hr class="col-lg-12 col-md-12 col-sm-12 col-xs-12 comment-sp">
             <h4>
@@ -141,12 +158,13 @@
                 <div class="media"  >
                     <div class="media-left" >
                         <a href="#">
-                            <img class="media-object img-rounded" th:src="${question.imgs}" >
+                            <img class="media-object img-rounded" th:src="${question.tourist.user_photo}" >
                         </a>
                     </div>
                     <div class="media-body">
                         <h5 class="media-heading" >
-                            <span th:text="xiaoqiao"></span>
+                            <span th:text="${question.tourist.user_name}"></span>
+                            &nbsp  &nbsp  等级 : <span th:text="${question.tourist.exp}"></span>
                         </h5>
 
                     </div>
@@ -167,5 +185,6 @@
         </div>
     </div>
 </div>
+
 </body>
 </html>

@@ -1,5 +1,6 @@
 package com.custchina.shequdemo.Comtroller;
 
+import com.alibaba.fastjson.JSON;
 import com.custchina.shequdemo.Service.QuestionService;
 import com.custchina.shequdemo.cache.HotCache;
 import com.custchina.shequdemo.dto.PageDto;
@@ -26,7 +27,7 @@ private HotCache hotCache;
     public String index(HttpServletRequest request, String token,
                         Model model,
                         @RequestParam(value = "page",defaultValue = "1")Integer page,
-                        @RequestParam(value = "size",defaultValue = "5")Integer size) {
+                        @RequestParam(value = "size",defaultValue = "8")Integer size) {
 //        Cookie[] cookies = request.getCookies();
 //        for (Cookie cookie : cookies) {
 //            if (cookie.getName().equals("token")) {
@@ -41,6 +42,7 @@ private HotCache hotCache;
 //
         List<String> tags = hotCache.getHots();
         PageDto pageDto =questionService.li(page,size);
+        System.out.printf(JSON.toJSONString(pageDto));
         model.addAttribute("pageDto",pageDto);
         model.addAttribute("tags",tags);
 
